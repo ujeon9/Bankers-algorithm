@@ -71,6 +71,7 @@ int main(){
 		}
 	
 		cnt = 0;
+	
 		//find the safe sequence
 		for (i = 0; i < 5; i++) {
 			int curFinish = 0;
@@ -113,7 +114,8 @@ int main(){
 		}
 
 		cur = head;
-	
+		
+		//resource-request algorithm
 		while(cur!=NULL) {
 			if (rPid == cur->pid) {
 				for (j = 0; j < 3; j++) {
@@ -139,6 +141,7 @@ int main(){
 		}
 		cur = head;
 		cnt = 0;
+	
 		//find the safe sequence
 		for (i = 0; i < 5; i++) {
 			int curFinish = 0;
